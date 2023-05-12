@@ -1,3 +1,5 @@
+#!/usr/bin/php
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -8,6 +10,7 @@
     <title>HUD-1 Settlement Statement</title>
 </head>
 <body>
+<?php echo "Hello, World!" ?>
 <table class="buyer-side">
 	<thead>  <!-- optional tag -->
 		<tr>
