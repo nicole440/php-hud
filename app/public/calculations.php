@@ -1,11 +1,10 @@
 <?php
-phpinfo();
 
-function printContractSalePrice($contract_sale_price) {
-    echo "$" . $contract_sale_price;
+function printValue($param) {
+    echo "$" . $param;
 }
-$contract_sale_price;
-$personal_property;
+$contract_sale_price = 250000;
+$personal_property = 75000;
 $settlement_charges_to_borrower = null;
 
 

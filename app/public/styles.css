@@ -1,14 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300&display=swap');
 
 body {
-    background-color: rgb(250, 250, 250);
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+    background: rgb(255,255,255);
+    background: linear-gradient(207deg, rgba(255,255,255,1) 0%, rgba(226,241,240,0.9430147058823529) 22%);
+    display: inline-flex;
+    /* grid-template-columns: 1fr 1fr;
     grid-template-areas:
         "header header"
         "info info"
         "buyer seller"
-        "charges charges";
+        "charges charges"; */
     padding: 10px;
     font-family: 'Arial', sans-serif;
 }
@@ -18,13 +19,17 @@ table {
 thead {
     color: #000;
 }
+th:first-child {
+    background-color: gray;
+}
+td:first-child {
+    background-color: lightgray;
+}
 td {
     border: 1px solid #000;
-    border-radius: 3px;
-    min-width: 100px;
-    padding: 5px;
+    min-width: 100x;
+    padding: 3px;
     background: rgb(255,255,255);
-    background: linear-gradient(207deg, rgba(255,255,255,1) 0%, rgba(241,241,241,0.9) 60%);
 }
 header {
     grid-area: header;
@@ -45,6 +50,8 @@ header {
 input[type=number], input[type=text], input[type=date] {
     border: none;
     background: transparent;
+    padding: 2px;
+    border: 1px dashed lightgray;
 }
 
 input[type=number]:hover, input[type=text]:hover, input[type=date]:hover {
