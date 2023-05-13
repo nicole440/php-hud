@@ -3,17 +3,29 @@ body {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-areas:
-        "header"
-        "info"
+        "header header"
+        "info info"
         "buyer seller"
-        "charges";
+        "charges charges";
     padding: 50px;
 }
 table {
     margin: 10px;
 }
-table, td, tr {
-    border: 1px solid black;
+thead {
+    color: #000;
+}
+table, td {
+    border: 1px solid #000;
+}
+td {
+    min-width: 150px;
+}
+header {
+    grid-area: "header";
+}
+.info {
+    grid-area: "info";
 }
 .buyer-side {
     grid-area: "buyer";
@@ -21,6 +33,10 @@ table, td, tr {
 .seller-side {
     grid-area: "seller"
 }
-td {
-    min-width: 150px;
+.charges {
+    grid-area: "charges";
+}
+
+input[type=number] {
+   
 }
