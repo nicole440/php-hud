@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300&display=swap');
+
 body {
     background-color: rgb(250, 250, 250);
     display: grid;
@@ -7,7 +9,8 @@ body {
         "info info"
         "buyer seller"
         "charges charges";
-    padding: 50px;
+    padding: 10px;
+    font-family: 'Arial', sans-serif;
 }
 table {
     margin: 10px;
@@ -15,28 +18,36 @@ table {
 thead {
     color: #000;
 }
-table, td {
-    border: 1px solid #000;
-}
 td {
-    min-width: 150px;
+    border: 1px solid #000;
+    border-radius: 3px;
+    min-width: 100px;
+    padding: 5px;
+    background: rgb(255,255,255);
+    background: linear-gradient(207deg, rgba(255,255,255,1) 0%, rgba(241,241,241,0.9) 60%);
 }
 header {
-    grid-area: "header";
+    grid-area: header;
 }
 .info {
-    grid-area: "info";
+    grid-area: info;
 }
 .buyer-side {
-    grid-area: "buyer";
+    grid-area: buyer;
 }
 .seller-side {
-    grid-area: "seller"
+    grid-area: seller;
 }
 .charges {
-    grid-area: "charges";
+    grid-area: charges;
 }
 
-input[type=number] {
-   
+input[type=number], input[type=text], input[type=date] {
+    border: none;
+    background: transparent;
 }
+
+input[type=number]:hover, input[type=text]:hover, input[type=date]:hover {
+    cursor: pointer;
+}
+
