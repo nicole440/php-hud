@@ -1,4 +1,5 @@
 <?php
+phpinfo();
 
 function printContractSalePrice($contract_sale_price) {
     echo "$" . $contract_sale_price;
