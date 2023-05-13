@@ -21,7 +21,6 @@ include 'calculations.php';
 		</header>
 
 		<div class="info">
-			asdfjkl;
 		</div>
 		<form method="post" action="controller.php">
 			<table class="buyer-side">
@@ -201,7 +200,10 @@ include 'calculations.php';
 					</tr>
 					<tr>
 						<td>301. Gross amount due from borrower (line 120)</td>
-						<td><input type="hidden" name="method" value="get"></td>
+						<td>
+							<input type="hidden" name="method" value="get">
+							<?php calculateGrossAmountDueFromBorrower($contract_sale_price, $personal_property, $settlement_charges_to_borrower) ?>
+						</td>
 					</tr>
 					<tr>
 						<td>302. Less amounts paid by/for borrower (line 220)</td>
@@ -236,11 +238,14 @@ include 'calculations.php';
 					<tr>
 						<td>401. Contract Sales Price</td>
 						<!-- <input type="hidden" name="method" value="get"> -->
-						<td><?php echo printValue($contract_sale_price) ?></td>
+						<td><?php printValue($contract_sale_price) ?></td>
 					</tr>
 					<tr>
 						<td>402. Personal Property</td>
-						<td><input type="hidden" name="method" value="get"></td>
+						<td>
+							<input type="hidden" name="method" value="get">
+							<?php printValue($personal_property) ?>
+						</td>
 					</tr>
 					<tr>
 						<td>403. <!--text box--></td>
@@ -288,7 +293,10 @@ include 'calculations.php';
 					</tr>
 					<tr>
 						<td>420. Gross Amount Due to Seller</td>
-						<td><input type="hidden" name="method" value="get"></td>
+						<td>
+							<input type="hidden" name="method" value="get">
+							<?php calculateGrossAmountDueToSeller($contract_sale_price, $personal_property, $tax_adjustments) ?>
+						</td>
 					</tr>
 					<tr>
 						<td>500. Reductions in Amount Due to Seller</td>
