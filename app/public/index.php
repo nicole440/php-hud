@@ -1,5 +1,6 @@
 <?php
 include 'calculations.php';
+include 'tax-proration.php';
 ?>
 
 <!DOCTYPE html>
