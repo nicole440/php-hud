@@ -65,13 +65,13 @@ $school_tax_proration = 0;
 $tax_adjustments = 0;
 
 /* TODO Work on this method (or what will likely be several methods) */
-function calculateAdjustmentForTaxes($tax_status_array, $tax_amounts_array) {
+// function calculateAdjustmentForTaxes($tax_status_array, $tax_amounts_array) {
 
-    foreach($tax_status_array as $taxing_authority => $status) {
-        if ($status == "paid") {
+//     foreach($tax_status_array as $taxing_authority => $status) {
+//         if ($status == "paid") {
 
-        }
-    }
-    $tax_adjustments += $adjustment_for_tax_paid_by_seller_advance;
-    return $tax_adjustments;
-}
+//         }
+//     }
+//     $tax_adjustments += $adjustment_for_tax_paid_by_seller_advance;
+//     return $tax_adjustments;
+// }
